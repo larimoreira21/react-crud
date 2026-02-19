@@ -98,7 +98,7 @@ function UserForm(props: UserFormProps) {
   const fileInputRef = props.fileInputRef;
 
   return (
-    <form onSubmit={formik.handleSubmit} className="text-left px-8">
+    <form onSubmit={formik.handleSubmit} className="text-left">
       <div className={`${sectionClass} flex-row gap-6 items-start`}>
         <div
           className="relative shrink-0 cursor-pointer"

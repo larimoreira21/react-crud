@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import ListUsers from './pages/ListUsers';
 import UserDetails from './pages/UserDetails';
+import CreateUser from './pages/CreateUser';
+import EditUser from './pages/EditUser';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<ListUsers />} />
           <Route path="/user/:id" element={<UserDetails />} />
+          <Route path="/user/create" element={<CreateUser />} />
+          <Route path="/user/:id/edit" element={<EditUser />} />
         </Routes>
 
         <ToastContainer position="bottom-right" autoClose={5000} newestOnTop />
